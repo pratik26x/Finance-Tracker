@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
+load_dotenv()
 
 # Set template folder to current directory (root)
 app = Flask(__name__, template_folder='.')
